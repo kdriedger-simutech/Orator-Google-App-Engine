@@ -2,7 +2,8 @@ __author__ = 'Enrico Giordano - MakarenaLabs'
 
 import Models.users as u
 #import dependences from models here #
-
+import json
+import date_encoder as de
 
 class UsersController:
 
