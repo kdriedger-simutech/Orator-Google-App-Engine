@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{33d3838b-df27-46de-8e81-7cfcedac6076}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>C:\Program Files (x86)\Google\google_appengine\dev_appserver.py</StartupFile>
+    <SearchPath>.;C:\Program Files (x86)\Google\google_appengine\;C:\Program Files (x86)\Google\google_appengine\lib\;C:\Program Files (x86)\Google\google_appengine\lib\webapp2-2.5.2\;C:\Program Files (x86)\Google\google_appengine\lib\jinja2-2.6\;lib\</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <CommandLineArguments>app.yaml --python_startup_script pydevd_startup.py --port=9999</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="appengine_config.py" />
+    <Compile Include="arrow\api.py" />
+    <Compile Include="arrow\arrow.py" />
+    <Compile Include="arrow\factory.py" />
+    <Compile Include="arrow\formatter.py" />
+    <Compile Include="arrow\locales.py" />
+    <Compile Include="arrow\parser.py" />
+    <Compile Include="arrow\util.py" />
+    <Compile Include="arrow\__init__.py" />
+    <Compile Include="blinker\base.py" />
+    <Compile Include="blinker\_saferef.py" />
+    <Compile Include="blinker\_utilities.py" />
+    <Compile Include="blinker\__init__.py" />
+    <Compile Include="Config\config.py" />
+    <Compile Include="Config\__init__.py" />
+    <Compile Include="Controllers\users_controller.py" />
+    <Compile Include="Controllers\__init__.py" />
+    <Compile Include="dateutil\easter.py" />
+    <Compile Include="dateutil\parser.py" />
+    <Compile Include="dateutil\relativedelta.py" />
+    <Compile Include="dateutil\rrule.py" />
+    <Compile Include="dateutil\test\test.py" />
+    <Compile Include="dateutil\test\__init__.py" />
+    <Compile Include="dateutil\tz.py" />
+    <Compile Include="dateutil\tzwin.py" />
+    <Compile Include="dateutil\zoneinfo\__init__.py" />
+    <Compile Include="dateutil\__init__.py" />
+    <Compile Include="FileHelper\file_helper.py" />
+    <Compile Include="FileHelper\__init__.py" />
+    <Compile Include="inflection.py" />
+    <Compile Include="lazy_object_proxy\compat.py" />
+    <Compile Include="lazy_object_proxy\simple.py" />
+    <Compile Include="lazy_object_proxy\slots.py" />
+    <Compile Include="lazy_object_proxy\utils.py" />
+    <Compile Include="lazy_object_proxy\__init__.py" />
+    <Compile Include="lib\bottle.py" />
+    <Compile Include="lib\cloudstorage\api_utils.py" />
+    <Compile Include="lib\cloudstorage\cloudstorage_api.py" />
+    <Compile Include="lib\cloudstorage\common.py" />
+    <Compile Include="lib\cloudstorage\errors.py" />
+    <Compile Include="lib\cloudstorage\rest_api.py" />
+    <Compile Include="lib\cloudstorage\storage_api.py" />
+    <Compile Include="lib\cloudstorage\test_utils.py" />
+    <Compile Include="lib\cloudstorage\__init__.py" />
+    <Compile Include="lib\date_encoder.py" />
+    <Compile Include="lib\__init__.py" />
+    <Compile Include="main.py" />
+    <Compile Include="Models\users.py" />
+    <Compile Include="Models\__init__.py" />
+    <Compile Include="orator\commands\application.py" />
+    <Compile Include="orator\commands\migrations\base_command.py" />
+    <Compile Include="orator\commands\migrations\install_command.py" />
+    <Compile Include="orator\commands\migrations\make_command.py" />
+    <Compile Include="orator\commands\migrations\migrate_command.py" />
+    <Compile Include="orator\commands\migrations\reset_command.py" />
+    <Compile Include="orator\commands\migrations\rollback_command.py" />
+    <Compile Include="orator\commands\migrations\status_command.py" />
+    <Compile Include="orator\commands\migrations\__init__.py" />
+    <Compile Include="orator\commands\__init__.py" />
+    <Compile Include="orator\connections\connection.py" />
+    <Compile Include="orator\connections\connection_interface.py" />
+    <Compile Include="orator\connections\connection_resolver_interface.py" />
+    <Compile Include="orator\connections\mysql_connection.py" />
+    <Compile Include="orator\connections\postgres_connection.py" />
+    <Compile Include="orator\connections\sqlite_connection.py" />
+    <Compile Include="orator\connections\__init__.py" />
+    <Compile Include="orator\connectors\connection_factory.py" />
+    <Compile Include="orator\connectors\connector.py" />
+    <Compile Include="orator\connectors\mysql_connector.py" />
+    <Compile Include="orator\connectors\__init__.py" />
+    <Compile Include="orator\database_manager.py" />
+    <Compile Include="orator\dbal\column.py" />
+    <Compile Include="orator\dbal\column_diff.py" />
+    <Compile Include="orator\dbal\comparator.py" />
+    <Compile Include="orator\dbal\mysql_schema_manager.py" />
+    <Compile Include="orator\dbal\platforms\mysql_platform.py" />
+    <Compile Include="orator\dbal\platforms\platform.py" />
+    <Compile Include="orator\dbal\platforms\postgres_platform.py" />
+    <Compile Include="orator\dbal\platforms\sqlite_platform.py" />
+    <Compile Include="orator\dbal\platforms\__init__.py" />
+    <Compile Include="orator\dbal\postgres_schema_manager.py" />
+    <Compile Include="orator\dbal\schema_manager.py" />
+    <Compile Include="orator\dbal\sqlite_schema_manager.py" />
+    <Compile Include="orator\dbal\table.py" />
+    <Compile Include="orator\dbal\table_diff.py" />
+    <Compile Include="orator\dbal\types\__init__.py" />
+    <Compile Include="orator\dbal\__init__.py" />
+    <Compile Include="orator\events\__init__.py" />
+    <Compile Include="orator\exceptions\connection.py" />
+    <Compile Include="orator\exceptions\connectors.py" />
+    <Compile Include="orator\exceptions\orm.py" />
+    <Compile Include="orator\exceptions\query.py" />
+    <Compile Include="orator\exceptions\__init__.py" />
+    <Compile Include="orator\migrations\database_migration_repository.py" />
+    <Compile Include="orator\migrations\migration.py" />
+    <Compile Include="orator\migrations\migration_creator.py" />
+    <Compile Include="orator\migrations\migrator.py" />
+    <Compile Include="orator\migrations\stubs.py" />
+    <Compile Include="orator\migrations\__init__.py" />
+    <Compile Include="orator\orm\builder.py" />
+    <Compile Include="orator\orm\collection.py" />
+    <Compile Include="orator\orm\mixins\soft_deletes.py" />
+    <Compile Include="orator\orm\mixins\__init__.py" />
+    <Compile Include="orator\orm\model.py" />
+    <Compile Include="orator\orm\relations\belongs_to.py" />
+    <Compile Include="orator\orm\relations\belongs_to_many.py" />
+    <Compile Include="orator\orm\relations\has_many.py" />
+    <Compile Include="orator\orm\relations\has_many_through.py" />
+    <Compile Include="orator\orm\relations\has_one.py" />
+    <Compile Include="orator\orm\relations\has_one_or_many.py" />
+    <Compile Include="orator\orm\relations\morph_many.py" />
+    <Compile Include="orator\orm\relations\morph_one.py" />
+    <Compile Include="orator\orm\relations\morph_one_or_many.py" />
+    <Compile Include="orator\orm\relations\morph_pivot.py" />
+    <Compile Include="orator\orm\relations\morph_to.py" />
+    <Compile Include="orator\orm\relations\morph_to_many.py" />
+    <Compile Include="orator\orm\relations\pivot.py" />
+    <Compile Include="orator\orm\relations\relation.py" />
+    <Compile Include="orator\orm\relations\__init__.py" />
+    <Compile Include="orator\orm\scopes\scope.py" />
+    <Compile Include="orator\orm\scopes\soft_deleting.py" />
+    <Compile Include="orator\orm\scopes\__init__.py" />
+    <Compile Include="orator\orm\utils.py" />
+    <Compile Include="orator\orm\__init__.py" />
+    <Compile Include="orator\pagination\base.py" />
+    <Compile Include="orator\pagination\length_aware_paginator.py" />
+    <Compile Include="orator\pagination\paginator.py" />
+    <Compile Include="orator\pagination\__init__.py" />
+    <Compile Include="orator\query\builder.py" />
+    <Compile Include="orator\query\expression.py" />
+    <Compile Include="orator\query\grammars\grammar.py" />
+    <Compile Include="orator\query\grammars\mysql_grammar.py" />
+    <Compile Include="orator\query\grammars\postgres_grammar.py" />
+    <Compile Include="orator\query\grammars\sqlite_grammar.py" />
+    <Compile Include="orator\query\grammars\__init__.py" />
+    <Compile Include="orator\query\join_clause.py" />
+    <Compile Include="orator\query\processors\mysql_processor.py" />
+    <Compile Include="orator\query\processors\postgres_processor.py" />
+    <Compile Include="orator\query\processors\processor.py" />
+    <Compile Include="orator\query\processors\sqlite_processor.py" />
+    <Compile Include="orator\query\processors\__init__.py" />
+    <Compile Include="orator\query\__init__.py" />
+    <Compile Include="orator\schema\blueprint.py" />
+    <Compile Include="orator\schema\builder.py" />
+    <Compile Include="orator\schema\grammars\grammar.py" />
+    <Compile Include="orator\schema\grammars\mysql_grammar.py" />
+    <Compile Include="orator\schema\grammars\postgres_grammar.py" />
+    <Compile Include="orator\schema\grammars\sqlite_grammar.py" />
+    <Compile Include="orator\schema\grammars\__init__.py" />
+    <Compile Include="orator\schema\mysql_builder.py" />
+    <Compile Include="orator\schema\schema.py" />
+    <Compile Include="orator\schema\__init__.py" />
+    <Compile Include="orator\support\collection.py" />
+    <Compile Include="orator\support\fluent.py" />
+    <Compile Include="orator\support\grammar.py" />
+    <Compile Include="orator\support\__init__.py" />
+    <Compile Include="orator\utils\url.py" />
+    <Compile Include="orator\utils\__init__.py" />
+    <Compile Include="orator\version.py" />
+    <Compile Include="orator\__init__.py" />
+    <Compile Include="pydevd_startup.py" />
+    <Compile Include="simplejson\compat.py" />
+    <Compile Include="simplejson\decoder.py" />
+    <Compile Include="simplejson\encoder.py" />
+    <Compile Include="simplejson\ordered_dict.py" />
+    <Compile Include="simplejson\scanner.py" />
+    <Compile Include="simplejson\tests\test_bigint_as_string.py" />
+    <Compile Include="simplejson\tests\test_bitsize_int_as_string.py" />
+    <Compile Include="simplejson\tests\test_check_circular.py" />
+    <Compile Include="simplejson\tests\test_decimal.py" />
+    <Compile Include="simplejson\tests\test_decode.py" />
+    <Compile Include="simplejson\tests\test_default.py" />
+    <Compile Include="simplejson\tests\test_dump.py" />
+    <Compile Include="simplejson\tests\test_encode_basestring_ascii.py" />
+    <Compile Include="simplejson\tests\test_encode_for_html.py" />
+    <Compile Include="simplejson\tests\test_errors.py" />
+    <Compile Include="simplejson\tests\test_fail.py" />
+    <Compile Include="simplejson\tests\test_float.py" />
+    <Compile Include="simplejson\tests\test_for_json.py" />
+    <Compile Include="simplejson\tests\test_indent.py" />
+    <Compile Include="simplejson\tests\test_item_sort_key.py" />
+    <Compile Include="simplejson\tests\test_iterable.py" />
+    <Compile Include="simplejson\tests\test_namedtuple.py" />
+    <Compile Include="simplejson\tests\test_pass1.py" />
+    <Compile Include="simplejson\tests\test_pass2.py" />
+    <Compile Include="simplejson\tests\test_pass3.py" />
+    <Compile Include="simplejson\tests\test_recursion.py" />
+    <Compile Include="simplejson\tests\test_scanstring.py" />
+    <Compile Include="simplejson\tests\test_separators.py" />
+    <Compile Include="simplejson\tests\test_speedups.py" />
+    <Compile Include="simplejson\tests\test_subclass.py" />
+    <Compile Include="simplejson\tests\test_tool.py" />
+    <Compile Include="simplejson\tests\test_tuple.py" />
+    <Compile Include="simplejson\tests\test_unicode.py" />
+    <Compile Include="simplejson\tests\__init__.py" />
+    <Compile Include="simplejson\tool.py" />
+    <Compile Include="simplejson\__init__.py" />
+    <Compile Include="six.py" />
+    <Compile Include="vendor.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="arrow" />
+    <Folder Include="blinker" />
+    <Folder Include="Config" />
+    <Folder Include="Controllers" />
+    <Folder Include="dateutil" />
+    <Folder Include="dateutil\test" />
+    <Folder Include="dateutil\zoneinfo" />
+    <Folder Include="FileHelper" />
+    <Folder Include="lazy_object_proxy" />
+    <Folder Include="lib" />
+    <Folder Include="lib\cloudstorage" />
+    <Folder Include="Models" />
+    <Folder Include="orator" />
+    <Folder Include="orator\commands" />
+    <Folder Include="orator\commands\migrations" />
+    <Folder Include="orator\connections" />
+    <Folder Include="orator\connectors" />
+    <Folder Include="orator\dbal" />
+    <Folder Include="orator\dbal\platforms" />
+    <Folder Include="orator\dbal\types" />
+    <Folder Include="orator\events" />
+    <Folder Include="orator\exceptions" />
+    <Folder Include="orator\migrations" />
+    <Folder Include="orator\orm" />
+    <Folder Include="orator\orm\mixins" />
+    <Folder Include="orator\orm\relations" />
+    <Folder Include="orator\orm\scopes" />
+    <Folder Include="orator\pagination" />
+    <Folder Include="orator\query" />
+    <Folder Include="orator\query\grammars" />
+    <Folder Include="orator\query\processors" />
+    <Folder Include="orator\schema" />
+    <Folder Include="orator\schema\grammars" />
+    <Folder Include="orator\support" />
+    <Folder Include="orator\utils" />
+    <Folder Include="simplejson" />
+    <Folder Include="simplejson\tests" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
