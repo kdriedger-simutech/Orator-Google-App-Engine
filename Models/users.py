@@ -11,14 +11,16 @@ class Users(Model):
     __table__ = 'users'
 
     #example of hidden fields
-    __hidden__ = ['password', 'remember_token', 'email', 'updated_at', 'created_at']
+    #__hidden__ = ['password', 'remember_token', 'email', 'updated_at', 'created_at']
+    # __hidden__ = ['password_hash']
 
-    #example of appends
-    __appends__ = ['photo_profile']
+    ##example of appends
+    #__appends__ = ['photo_profile']
+    __appends__ = ['email']
 
-    #example of fillable
-    __fillable__ = ['facebook', 'skype', 'google_plus', 'sesso', 'data_nascita', 'collega_like',
-                    'lavoratore_like', 'img_profile']
+    ##example of fillable
+    #__fillable__ = ['facebook', 'skype', 'google_plus', 'sesso', 'data_nascita', 'collega_like',
+    #                'lavoratore_like', 'img_profile']
 
     #example of functions
     #def uploads(self):
