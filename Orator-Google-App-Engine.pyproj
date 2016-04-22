@@ -185,6 +185,9 @@
     <Compile Include="orator\version.py" />
     <Compile Include="orator\__init__.py" />
     <Compile Include="pydevd_startup.py" />
+    <Compile Include="route_table.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="simplejson\compat.py" />
     <Compile Include="simplejson\decoder.py" />
     <Compile Include="simplejson\encoder.py" />
@@ -265,6 +268,9 @@
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.yaml" />
   </ItemGroup>
   <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />

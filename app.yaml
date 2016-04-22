@@ -1,13 +1,19 @@
-application: #your application#
+application: orator-gae
 #module: #your module#
-version: #your version#
+version: 1
 runtime: python27
-api_version: #your api version#
+api_version: 1
 threadsafe: yes
 
+# handlers:
+# - url: .*
+#   script: main.bottle
+
+# webapp2
 handlers:
 - url: .*
-  script: main.bottle
+  script: route_table.application  
+
 
 libraries:
 - name: MySQLdb
