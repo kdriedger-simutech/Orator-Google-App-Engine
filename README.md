@@ -39,5 +39,6 @@ The "Models" directory contains Entity definition according to ORM Eloquent stan
 The orator project belongs to MakarenaLabs and source code was written by Enrico Giordano. 
 
 See Original Orator library: https://github.com/sdispater/orator
+
 Modified to run on webapp2 by Kevin Driedger
 
