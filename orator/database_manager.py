@@ -75,6 +75,9 @@ class BaseDatabaseManager(ConnectionResolverInterface):
 
         :rtype: None
         """
+        if name is None:
+            name = self.get_default_connection()
+
         self.disconnect(name)
 
         if name in self._connections:
@@ -165,7 +168,8 @@ class BaseDatabaseManager(ConnectionResolverInterface):
         return self._config['default']
 
     def set_default_connection(self, name):
-        self._config['default'] = name
+        if name is not None:
+            self._config['default'] = name
 
     def extend(self, name, resolver):
         self._extensions[name] = resolver
@@ -174,10 +178,7 @@ class BaseDatabaseManager(ConnectionResolverInterface):
         return self._connections
 
     def __getattr__(self, item):
-        try:
-            return object.__getattribute__(self, item)
-        except AttributeError as e:
-            return getattr(self.connection(), item)
+        return getattr(self.connection(), item)
 
 
 class DatabaseManager(BaseDatabaseManager, threading.local):
